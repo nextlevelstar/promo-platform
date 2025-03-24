@@ -1,0 +1,545 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+main {
+    margin: 0 auto;
+    padding: 15px;
+    flex: 1;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="url"],
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Profile and Promotions Section */
+h2,
+h3 {
+    color: #333;
+    margin: 30px;
+}
+
+.profile-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promotions .promotion {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.promotions .promotion h4 {
+    margin: 0 0 10px;
+}
+
+.promotions .promotion p {
+    color: #555;
+    padding: 5px;
+}
+
+.promotions .promotion a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.promotions .promotion a:hover {
+    text-decoration: underline;
+}
+
+/* Basic table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Make the table container responsive */
+.table-container {
+    overflow-x: auto;
+}
+/* Login and Register Page */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #008CBA;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #007b8b;
+}
+
+/* Promotion titles */
+.promotions .promotion h4 a {
+    font-size: 18px;
+    color: #008CBA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.promotions .promotion h4 a:hover {
+    text-decoration: underline;
+    color: #005f6b;
+}
+
+/* Promotion descriptions */
+.promotions .promotion p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Promotion List Container */
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.promotions .promotion {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 1px 1px 10px #2a4eff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .promotions {
+        display: block;
+    }
+    .promotions .promotion {
+        margin: 20px auto;
+    }
+}
+
+h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+.user-submitted-promotions-container {
+    width: 95%;
+    margin: 10px auto 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.user-submitted-promotions {
+    margin: 30px;
+    border: 1px solid;
+    width: 300px;
+    text-align: center;
+}
+.submitted-promotions-title {
+    background-color: #3636c5;
+}
+.submitted-promotions-title h2 {
+    color: white;
+    margin: 0;
+}
+
+.submitted-promotions-title a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+.submitted-promotions-description {
+    font-weight: bold;
+    padding: 5px;
+    background: wheat;
+    border: 1px solid;
+}
+.submitted-promotions-time {
+    border: 1px solid;
+    font-size: 12px;
+    color: gray;
+    border: 1px solid;
+}
+
+.submitted-promotions-delete form {
+    margin: 0;
+}
+
+.featured-promotions-container,
+.recent-follow-promotions-container {
+    border: 1px solid;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 1px 1px 5px red;
+}
+.recent-follow-promotions-container {
+    box-shadow: 1px 1px 5px blue;
+}
+
+.featured-promotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.featured-promotions .promotion {
+    margin: 30px;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 1px 1px 10px red;
+    font-weight: bold;
+    padding: 5px;
+}
+.featured-promotions .promotion .promotion-title {
+    margin: 5px;
+}
+
+.featured-promotions .promotion a {
+    color: black;
+    text-decoration: none;
+}
+
+.promotion-title,
+.promotion-category {
+    background: #a5afff;
+    padding: 5px;
+    border: 1px solid;
+}
+
+.promotion-title a {
+    display: block;
+    text-decoration: none;
+}
+
+.submitted-by {
+    margin-top: 10px;
+    background: #cfcfcf;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.no-promotions-message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4d; /* Red color to grab attention */
+    background-color: #ffe6e6; /* Light red background */
+    border: 1px solid #ff9999;
+    border-radius: 8px;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.success-message, .error-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.password-hint {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+/* Follow Button Styles */
+#follow-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+#follow-btn:hover {
+    background-color: #0056b3;
+}
+.followers {
+    margin: 10px auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer .footer-content {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer .footer-content p {
+    margin-bottom: 10px;
+}
+
+footer .footer-content a {
+    color: wheat;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .logo h1 a {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    footer .footer-content ul {
+        text-align: center;
+    }
+
+    footer .footer-content ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .featured-promotions-container {
+        box-shadow: none;
+        width: 95%;
+        border: none;
+    }
+
+    .featured-promotions .promotion {
+        display: inline-block;
+        margin: 15px;
+    }
+    main {
+        padding: 0;
+    }
+    table {
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    /* Stack the columns vertically for mobile devices */
+    thead {
+        display: none;
+    }
+    
+    tbody tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    tbody td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    
+    tbody td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 8px 0;
+    }
+
+    .logo h1 a {
+        font-size: 18px;
+    }
+
+    form {
+        width: 95%;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .no-promotions-message {
+        width: 90%;
+    }
+}
+@media (max-width: 350px) {
+
+    .promotions .promotion {
+        width: 90%;
+    }
+
+}
